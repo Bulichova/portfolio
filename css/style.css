@@ -1,0 +1,59 @@
+/*Общие стили для всего документа*/
+body{
+    color: black;
+}
+.container{
+    background: blanchedalmond;
+    width: 600px;
+    margin: 0 auto;
+}
+
+/* Стили для header */
+.header{
+    background: black;
+    border-bottom: 1px solid red;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navList{
+    display: flex;
+}
+/* задаем правый отступ всем элементам не считая последнего */
+.navList li:not(:last-child){
+    margin-right: 10px;
+}
+.navList li a {
+    padding: 20px 0;
+}
+/* Стили для header */
+
+/* Стили для hero */
+
+/* Стили для hero */
+
+/* Стили для about*/
+.about .container{
+    display: flex;
+    flex-flow: column;
+}
+.aboutCont{
+    display: flex;
+}
+.aboutCont img{
+    width: 30%;
+}
+/* Стили для about*/
+
+
+/* Стили для footer */
+.footer{
+    background: black;
+}
+
+/* Стили для footer */
+
+
+

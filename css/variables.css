@@ -1,0 +1,10 @@
+:root{
+    --default-text:'Brygada 1918', serif;
+    --main-text: 'Hachi Maru Pop', cursive;
+    --easy-text: 'Lora', serif;
+
+    --main-color:grey;
+    --title-color:black;
+
+    --grey-back:rgba(0, 0, 0, 0.158);
+}

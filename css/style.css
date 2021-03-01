@@ -1,17 +1,49 @@
+
+
 /*Общие стили для всего документа*/
+html{
+    font-family: var(--default-text);
+}
 body{
     color: black;
 }
+a{
+    font-family: var(--easy-text);
+}
 .container{
-    background: blanchedalmond;
+    background:var(--grey-back);
     width: 600px;
     margin: 0 auto;
+    padding-left:15px;
+    padding-right: 15px;
+    display: flex;
+    flex-flow: column;
+}
+.container:not(.header .container){
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.title {
+    text-transform: capitalize;
+    font-family: var(--main-text);
+    text-align: center;
+    font-weight: 900;
+    display: flex;
+    margin: 0 auto 20px;
+}
+.blockTitle{
+    margin-bottom: 30px;
+    text-transform: capitalize;
 }
 
 /* Стили для header */
 .header{
     background: black;
     border-bottom: 1px solid red;
+}
+.header .container{
+    background: dimgray;
+   
 }
 .nav{
     display: flex;
@@ -28,13 +60,49 @@ body{
 .navList li a {
     padding: 20px 0;
 }
+.nav>a{
+    text-transform: capitalize;
+}
+.nav .navList a{
+    text-transform: uppercase;
+}
 /* Стили для header */
 
 /* Стили для hero */
+.hero{
+    background: rgb(132, 176, 219);
+ 
+}
+.hero .title{
+    color: orangered;
+}
+.socialList {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+.socialList li{
+    width: 44px;
+    height: 44px;
+    border: 44px;
+    background: rgb(224, 225, 228);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.socialList li:not(:last-child){
+    margin-right: 10px;
+}
+
 
 /* Стили для hero */
 
 /* Стили для about*/
+.about .title{
+    color: slateblue;
+}
 .about .container{
     display: flex;
     flex-flow: column;
@@ -43,14 +111,87 @@ body{
     display: flex;
 }
 .aboutCont img{
-    width: 30%;
+    margin-right: 30px;
 }
+.about{
+    background: rgb(182, 152, 77);  
+}
+
 /* Стили для about*/
+/* Стили для skills*/
+.skills .title{
+    color: teal;
+    
+}
+.skills{
+    background: rgb(155, 77, 116);
+ 
+}
+/* Стили для skills*/
+/* Стили для work*/
+.work .title{
+    color: purple;
+}
+.work .container{
+    justify-content: space-between;
+    align-items: center;
+}
+.work{
+    background: rgb(96, 172, 168);
+ 
+}
+.workList li {
+    width: 250px;
+    height: 200px;
+    border: 1px solid white;
+    margin-top: 20px;
+}
+.workList{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+/* Стили для work*/
+/* Стили для contact*/
+.contact .title{
+    color: white;
+}
+.contact{
+    background: rgb(233, 164, 61);    
+}
+.contact .container{
+    align-items: center;
+}
+.contactForm {
+    display: flex;
+    flex-flow: column;
+    width: 80%;
+    align-items: center;
+}
+.contactForm input,
+.contactForm textarea{
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.contactForm button{
+    padding: 10px 20px;
+    border: none;
+    background:blue;
+    color: cornsilk;
+    text-transform: capitalize;
+    letter-spacing: 0.5em;
+    cursor: wait;
+}
+/* Стили для contact*/
+
 
 
 /* Стили для footer */
 .footer{
     background: black;
+
 }
 
 /* Стили для footer */

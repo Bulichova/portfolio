@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Brygada+1918&family=Hachi+Maru+Pop&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/normalise.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -34,18 +37,18 @@
       </div>
     </header>
     <main>
-        <section id="hero">
+        <section id="hero" class="hero">
           <div class="container">
-            <h1>tanya</h1>
-            <ol>
+            <h1 class="title">tanya</h1>
+            <ol class="socialList">
               <li>
-                <a href="#">fb</a>
+                <a href="#">a</a>
               </li>
               <li>
-                <a href="#">linkidin</a>
+                <a href="#">a</a>
               </li>
               <li>
-                <a href="#">github</a>
+                <a href="#">a</a>
               </li>
             </ol>
           </div>
@@ -54,20 +57,20 @@
           <div class="container"> 
             <h2 class="title">about</h2>
             <div class="aboutCont">
-              <img src="#" alt="foto">
+              <img src="./images/smoke.jpg" alt="foto" width="35%">
               <div>
-                <h3>kuku</h3>
+                <h3 class="blockTitle">kuku</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, vero?</p>
               </div>
             </div>
           </div>
         </section>
-        <section id="skills">
+        <section id="skills" class="skills">
           <div class="container">
             <h2 class="title">skills</h2>
             <div>
               <div>
-                <h3>profesional skills</h3>
+                <h3 class="blockTitle">profesional skills</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi corrupti quam officia est architecto sapiente vero minus ducimus amet repellendus?</p>
               <ul>
                 <li>html5</li>
@@ -76,14 +79,16 @@
                 <li>js</li>
               </ul>
               </div>
-              <img src="" alt="foto2">
+              <div>
+                <img src="./images/bsmoke.jpg" alt="foto2" width="35%">
+              </div>
             </div>
           </div>
         </section>
-        <section id="work">
+        <section id="work" class="work">
           <div class="container">
             <h2 class="title">work</h2>
-            <ol>
+            <ol class="workList">
               <li>
                 <a href="#">
                   <img src="" alt="foto3">
@@ -117,10 +122,10 @@
             </ol>
           </div>
         </section>
-        <section id="contact">
+        <section id="contact" class="contact">
           <div class="container"> 
             <h2 class="title">contact</h2>
-            <form action="">
+            <form class="contactForm">
               <input type="text" placeholder="name">
               <input type="text"  placeholder="email">
               <textarea name="" id="" cols="30" rows="10">comment</textarea>
@@ -139,7 +144,3 @@
     
   </body>
   </html>
-  <!-- <h1>hello <!DOCTYPE html></h1>  
-  <h2>HTML Image</h2>
-  <img src="./images/smoke.jpg" alt="дым">
-  <img src="./images/bsmoke.jpg"alt=" чб дым"> -->

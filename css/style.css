@@ -12,7 +12,7 @@ a{
 }
 .container{
     background:var(--grey-back);
-    width: 600px;
+    width: 80%;
     margin: 0 auto;
     padding-left:15px;
     padding-right: 15px;
@@ -28,8 +28,19 @@ a{
     font-family: var(--main-text);
     text-align: center;
     font-weight: 900;
-    display: flex;
+    /* display: flex; */
     margin: 0 auto 20px;
+}
+.title::after{
+    content: "";
+    width: 100%;;
+    height: 3px;
+    background: lightskyblue;
+    display: block;
+    margin-top: 10px;
+}
+.title:hover::after{
+    background: khaki;
 }
 .blockTitle{
     margin-bottom: 30px;
@@ -38,11 +49,17 @@ a{
 
 /* Стили для header */
 .header{
-    background: black;
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
     border-bottom: 1px solid red;
+    box-shadow: 0 0 40px red, 20px 20px 40px black, 40px 40px 40px white;
+    background: black;
 }
 .header .container{
     background: dimgray;
+
    
 }
 .nav{
@@ -59,6 +76,36 @@ a{
 }
 .navList li a {
     padding: 20px 0;
+    position: relative;
+}
+.navList li a::after{
+    content: "";
+    /* width:inherit; */
+    /* height: 10px; */
+    /* background: blue;   */
+    width: 100%;
+    display: block;
+    border: 1px solid blue;
+    margin-top: 5px;
+    opacity: 0;
+    position: absolute;
+    bottom: 16px;
+}
+.navList li a:hover,
+.navList li a:focus
+{
+    color: ivory;
+}
+/* .navList li a:visited{ */
+    /* color: gray; */
+/* } */
+.navList li a:active{
+    color: hotpink;
+}
+.navList li a:hover::after,
+.navList li a:focus::after
+{
+    opacity: 1;
 }
 .nav>a{
     text-transform: capitalize;
@@ -71,6 +118,22 @@ a{
 /* Стили для hero */
 .hero{
     background: rgb(132, 176, 219);
+    background: linear-gradient(145deg,
+     rgb(236, 8, 8) 0%,
+     rgb(236, 8, 8) 14%,
+     rgb(235, 176, 14) 14%,
+     rgb(235, 176, 14) 28%,
+     rgb(229, 233, 9) 28%,
+     rgb(229, 233, 9) 42%,
+      rgb(130, 225, 35) 42%,
+      rgb(130, 225, 35) 56%,
+      rgb(25, 187, 236) 56%,
+       rgb(25, 187, 236) 70%,
+        rgb(22, 18, 236) 70%,
+        rgb(22, 18, 236) 84%, 
+       rgb(149, 4, 179) 84%,
+       rgb(149, 4, 179) 100%);
+    /* background: linear-gradient(180deg, rgb(144, 136, 216) 8%, rgb(130, 225, 35) 92%); */
  
 }
 .hero .title{
@@ -106,15 +169,19 @@ a{
 .about .container{
     display: flex;
     flex-flow: column;
+    background: linear-gradient(45deg, rgb(144, 136, 216) 50%, rgb(130, 225, 35) 50%);
 }
 .aboutCont{
     display: flex;
+    background: linear-gradient(45deg, rgb(30, 159, 245) 50%, rgb(231, 71, 218) 50%);
+
 }
 .aboutCont img{
     margin-right: 30px;
 }
 .about{
-    background: rgb(182, 152, 77);  
+    background: rgb(182, 152, 77); 
+  
 }
 
 /* Стили для about*/
@@ -158,7 +225,22 @@ a{
     color: white;
 }
 .contact{
-    background: rgb(233, 164, 61);    
+    background: rgb(233, 164, 61);
+    background: radial-gradient(
+    rgb(236, 8, 8) 0%,
+    rgb(236, 8, 8) 14%,
+    rgb(235, 176, 14) 14%,
+    rgb(235, 176, 14) 28%,
+    rgb(229, 233, 9) 28%,
+    rgb(229, 233, 9) 42%,
+     rgb(130, 225, 35) 42%,
+     rgb(130, 225, 35) 56%,
+     rgb(25, 187, 236) 56%,
+      rgb(25, 187, 236) 70%,
+       rgb(22, 18, 236) 70%,
+       rgb(22, 18, 236) 84%, 
+      rgb(149, 4, 179) 84%,
+      rgb(149, 4, 179) 100%);    
 }
 .contact .container{
     align-items: center;

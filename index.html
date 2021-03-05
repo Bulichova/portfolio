@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/normalise.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
   </head>
   <body>
     <header class="header">
@@ -33,6 +34,9 @@
               <a href="#contact">contact</a>
             </li>
           </ul>
+          <button id="modalBtn">
+            show
+          </button>
         </nav>
       </div>
     </header>
@@ -139,8 +143,16 @@
         <p>&copy; copyrgts</p>
       </div>
     </footer>
+    <!-- модальное окно -->
+    <div id="backDrop">
+      <div id="content">
+        <p>привет</p>
+      </div>
+    </div>
 
     
-    
+    <script src="./js/modalRefs.js" type="module"></script>
+  <script src="./js/index.js" type="module"></script>
+
   </body>
   </html>

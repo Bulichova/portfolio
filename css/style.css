@@ -278,5 +278,14 @@ a{
 
 /* Стили для footer */
 
+/* стили кнопки открытия модального окна */
+
+#modalBtn{
+    color: blanchedalmond;
+    background: black;
+    padding: 10px 20px;
+    border: none;
+}
+
 
 

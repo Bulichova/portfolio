@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<script></script>
+<body>
+   <form class="form">
+       <label for="userName">name</label>
+       <!--  подсказка для пользователя -->
+       <input type="text" id="userName" placeholder="enter your name">
+       
+       <label>Last Name
+           <input type="text" placeholder="enter your last name">
+        </label>
+        <h3>Age</h3>
+        <input type="number" min="2" max="10" step="2" placeholder="enter your age">
+           
+        <h3>Range</h3>
+        <input type="range" min="2" max="20" step="2">
+        <div class="birth">
+            <p>Date</p>
+            <input type="month" placeholder="month">
+            <input type="week" placeholder="wee">
+            <input type="date" placeholder="date">
+            <input type="time" placeholder="time">
+            <input type="datetime" placeholder="datetime">
+        </div>
+
+        <p>Search</p>
+        <input type="search" placeholder="search">
+
+        <h3> email</h3>
+    <input type="email" placeholder="enter your email">
+ <p>phone</p> 
+ <input type="tel" placeholder="enter your phone"> 
+ <h3>password</h3>
+ <input type="password" placeholder="enter your pass">
+
+ <p>texterea</p>
+ <textarea name="" id="" cols="10" rows="10" placeholder="message">
+     enter
+ </textarea> 
+
+ <p>select</p>
+ <select name="select" id="">
+     <option value="econom">econom</option>
+     <option value="standard">standard</option>
+     <option value="premium">premium</option>
+
+ </select>
+
+ <h3>file</h3>
+ <input type="file">
+
+ <h3>image</h3>
+ <input type="image">
+<div class="radio">
+ <h3>эконом</h3>
+ <input type="radio">
+ <h3>стандарт</h3>
+ <input type="radio">
+ <h3>премиум</h3>
+ <input type="radio">
+</div>
+
+<div class="checkbox">
+   <h3>эконом</h3>
+ <input type="checkbox">
+ <h3>стандарт</h3>
+ <input type="checkbox">
+ <h3>премиум</h3>
+ <input type="checkbox">
+</div>
+
+<input type="button" value="button">
+<input type="reset" value="reset">
+<input type="submit" value="submit">
+
+<input type="color">
+
+
+</form>
+
+
+
+<script src="../js/form.js" type="module"></script>
+</body>
+</html>

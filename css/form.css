@@ -1,0 +1,16 @@
+.form{
+    border: 1px solid;
+padding: 30px;
+display: flex;
+flex-flow: column;
+}
+.radio{
+    display: flex;
+   justify-content:space-between;
+   align-items: center;  
+}
+.checkbox{
+    display: flex;
+   justify-content:space-between;
+   align-items: center;  
+} 

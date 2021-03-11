@@ -9,7 +9,9 @@
 export default {
     backDrop: document.getElementById("backDrop"),
     content: document.getElementById("content"),
-    modalBtn: document.getElementById("modalBtn")
+    modalBtn: document.getElementById("modalBtn"),
+
+    form: document.querySelector(".form")
 }
 
 

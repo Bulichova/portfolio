@@ -3,9 +3,13 @@
 /*Общие стили для всего документа*/
 html{
     font-family: var(--default-text);
+    height: 100%;
 }
 body{
+    display: flex;
+    flex-flow: column;
     color: black;
+    height: 100%;
 }
 a{
     font-family: var(--easy-text);
@@ -20,6 +24,7 @@ a{
     flex-flow: column;
 }
 .container:not(.header .container){
+   background: gray;
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -46,21 +51,30 @@ a{
     margin-bottom: 30px;
     text-transform: capitalize;
 }
+section{
+    /* display: none; */
+}
+.main{
+    flex: 1 0 auto;
+}
 
 /* Стили для header */
 .header{
+    flex: 0 0 auto;
     position: fixed;
     left: 0;
     right: 0;
     width: 100%;
-    border-bottom: 1px solid red;
-    box-shadow: 0 0 40px red, 20px 20px 40px black, 40px 40px 40px white;
+    border-bottom: 1px solid rgb(7, 7, 7);
+    box-shadow: 0 0 40px rgb(5, 5, 5), 20px 20px 40px black, 40px 40px 40px white;
     background: black;
 }
 .header .container{
-    background: dimgray;
+    background: rgb(7, 6, 6);
 
-   
+}
+.header a{
+    color: white;
 }
 .nav{
     display: flex;
@@ -85,7 +99,7 @@ a{
     /* background: blue;   */
     width: 100%;
     display: block;
-    border: 1px solid blue;
+    border: 1px solid rgb(239, 239, 241);
     margin-top: 5px;
     opacity: 0;
     position: absolute;
@@ -117,8 +131,8 @@ a{
 
 /* Стили для hero */
 .hero{
-    background: rgb(132, 176, 219);
-    background: linear-gradient(145deg,
+    background: rgba(125, 132, 139, 0.11);
+    /* background: linear-gradient(145deg,
      rgb(236, 8, 8) 0%,
      rgb(236, 8, 8) 14%,
      rgb(235, 176, 14) 14%,
@@ -132,7 +146,7 @@ a{
         rgb(22, 18, 236) 70%,
         rgb(22, 18, 236) 84%, 
        rgb(149, 4, 179) 84%,
-       rgb(149, 4, 179) 100%);
+       rgb(149, 4, 179) 100%); */
     /* background: linear-gradient(180deg, rgb(144, 136, 216) 8%, rgb(130, 225, 35) 92%); */
  
 }
@@ -226,8 +240,8 @@ a{
 }
 .contact{
     background: rgb(233, 164, 61);
-    background: radial-gradient(
-    rgb(236, 8, 8) 0%,
+    /* background: radial-gradient( */
+    /* rgb(236, 8, 8) 0%,
     rgb(236, 8, 8) 14%,
     rgb(235, 176, 14) 14%,
     rgb(235, 176, 14) 28%,
@@ -240,7 +254,7 @@ a{
        rgb(22, 18, 236) 70%,
        rgb(22, 18, 236) 84%, 
       rgb(149, 4, 179) 84%,
-      rgb(149, 4, 179) 100%);    
+      rgb(149, 4, 179) 100%);     */
 }
 .contact .container{
     align-items: center;
@@ -272,6 +286,7 @@ a{
 
 /* Стили для footer */
 .footer{
+    flex:  0 0 auto;
     background: black;
 
 }
